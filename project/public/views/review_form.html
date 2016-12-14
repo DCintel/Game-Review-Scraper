@@ -1,0 +1,36 @@
+<form onSubmit="return add_review()"> 
+    <fieldset  class="review-forms">
+        <div class="review-form-group">
+            <p><b>1. Enter game name:</b></p>
+            <input autocomplete="off" autofocus class="form-control" name="game" id="game" placeholder="Game Name" type="text"/>
+        </div>
+        <br>
+        
+        <div class="review-form-group">
+            <p><b>2. Chose gaming interest level:</b></p>
+            Hardcore: <input  name="review_radio" value="hardcore_review" type="radio" style="padding: 10px;"/>
+            Hobbyist: <input  name="review_radio" value="hobbyist_review" type="radio" style="padding: 10px;"/>
+            Kids: <input  name="review_radio" value="kids_review" type="radio" style="padding: 10px;"/>
+        </div>
+        <br>
+        
+        <div class="review-form-group">
+            <p><b>3. Enter your review score:</b></p>
+            <input  name="rating" id="rating-form" type="text" maxlength="2"/>/10
+        </div>
+        <br>
+        
+        <div class="review-comment">
+            <p><b>4. Add an optional review comment. Maximum 200 characters:</b></p>
+            <textarea name="review_comment" id="review-comment-form" placeholder="Tell us what you thought!" type="text" maxlength="200"/>
+        </div>
+        <br>
+        
+        <div id="review-button">
+            <button class="btn btn-default">
+                <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                Sumbit Review!
+            </button>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- http://jquery.com/ -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        
+        <!-- app's own CSS -->
+        <link href="/css/styles.css" rel="stylesheet"/>
+        
+        <!-- http://getbootstrap.com/ -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <!-- http://getbootstrap.com/ -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- http://underscorejs.org/ -->
+        <script src="js/underscore-min.js"></script>
+
+        <!-- https://github.com/twitter/typeahead.js/ -->
+        <script src="js/typeahead.jquery.min.js"></script>
+        
+        <!-- app's own JavaScript -->
+        <script src="js/pscripts.js"></script>
+        
+    </head>
+    <div id="wrapper">
+        <body>
+            
+            <div id="banner-container">
+                <img id="title-banner" src="images/titlebanner.jpg">
+            </div>
+            
+            <div id="site-content">
+                
+                <img id="textstrip" src="images/textstrip.jpg">
+                
+                <div class="navigation" id="navigation"></div>
+             
+                <form id="search-form" role="form" onsubmit="return get_review(document.getElementById('q').value)">
+                    <div>
+                        <label class="sr-only" for="q">Search:</label>
+                        <input id="q" placeholder="Search for a game" type="text"/>
+                    </div>
+                </form>
+                
+                <div id="main-content"></div>
+            </div>
+        </body>
+    </div>
+</html>

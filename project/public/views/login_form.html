@@ -1,0 +1,21 @@
+<form onSubmit="return login(document.getElementById('username').value, document.getElementById('password').value)">
+    <fieldset  class="forms">
+        <p>Login using the forms below or click "register" above to make an account.</p>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" id="username" placeholder="Username" type="text"/>
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <input class="form-control" name="password" id="password" placeholder="Password" type="password"/>
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <button class="btn btn-default">
+                <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                Log in
+            </button>
+        </div>
+    </fieldset>
+</form>
